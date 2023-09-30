@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+    font-family: Futura, Arial, sans-serif;
+}
+
+body{
+ 
+    /* overflow: hidden; */
+ 
+}
+
+#container{
+    display: flex;
+    background-color: azure;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#centered-content{
+    text-align: center;
+}
+
+#quiz-container{
+    background: linear-gradient(rgb(242, 174, 255) , rgb(252, 232, 255),rgb(242, 174, 255) ) ;
+    height: 500px;
+    width: 400px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px 2px rgb(0, 0, 0, 0.1) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 45px;
+    margin: 0;
+
+    }
+
+
+.image img{
+
+    margin: 20px;
+    height: 200px;
+    width: 200px;
+}
+
+
+button.start-btn {
+    border: none;
+    border-radius: 20px ;
+    padding: 8px 20px;
+    background-color: rgb(225, 78, 255);
+    font-size: 0.9em;
+    margin: 20px;
+    align-items: end;
+    letter-spacing: 0.2em;
+    cursor: pointer;
+    display: inline-block;
+}
+
+
+/* question-container */
+
+#question-container{
+
+    background: linear-gradient(rgb(242, 174, 255) , rgb(252, 232, 255),rgb(242, 174, 255) ) ;
+    height: 500px;
+    width: 400px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px 2px rgb(0, 0, 0, 0.1) ;
+    padding: 0;
+    margin: 0;
+    display: none;
+
+}
+
+
+.quiz-questions {
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+
+.quiz-questions p{
+    font-size: 1.0em ;
+    margin: 20px 15px 5px 20px;
+    padding: 10px 20px;
+    font-weight: 900;
+    
+}
+
+.timer p {
+    color: rgb(161, 28, 28);
+    font-size: 0.9em ;
+    padding: 10px 20px;
+}
+
+hr{
+    background-color:rgb(225, 78, 255);
+    height : .2rem;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.question-text{
+    text-align: center;
+}
+
+.question-text p{
+    width: 100%;
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+
+/* ************ */
+
+/* Add these CSS styles to your styles.css file */
+.option-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .option {
+    font-size: 0.8em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 50%;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .option:hover {
+    /* background-color: purple;
+    color: white; */
+  }
+  
+  .next-btn {
+    margin-top: 20px;
+  }
+
+  .next{
+
+    border: 1px solid;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: transparent;
+  }
+
+  .next:hover{
+    background-color: purple;
+    color: white;
+
+}
+
+
+  .result-score {
+    font-size: 1.5em;
+    margin-top: 20px;
+    display: none;
+  }
+  
